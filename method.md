@@ -14,4 +14,4 @@ This let me see unreleased items and the lab was marked as complete.
 ### Why the exploit works
 Since the website uses this SQL Query to show results ```SELECT * FROM products WHERE category = 'Gifts' AND released = 1```,
 by adding ```+OR+1=1``` it means that the query will return all items since either the items are part of "gifts" or 1=1. 
-Additionally, the ```--```at the end of the query means that the rest of the SQL qery is turned into a comment, bypassing the effects that ```released = 1 would``` normally have.
+Additionally, the ```--```at the end of the query means that the rest of the SQL qery is turned into a comment, bypassing the effects that ```released = 1``` would normally have.
