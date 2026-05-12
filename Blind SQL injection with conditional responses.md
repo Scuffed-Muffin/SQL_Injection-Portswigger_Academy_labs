@@ -25,7 +25,7 @@ To do this we can use this payload:```' AND (SELECT SUBSTRING(password,1,1) FROM
 For the payload for '2', use all alphanumeric characters, done by using the Brute forcer payload type.
 For the paylaod for '1', only use numbers ranging from 1-20.
 When looking through the responses, only some will have a different length, these are the ones containing characters presnt in the password.
-From this, I gathered that the password is:    ,but this is different for every user.
+From this, I gathered my administrator's but this is different for every user.
 ### Why the exploit works 
 The exploit uses the fact that the welcome back message only appears after a succesful query to determine whether the inputs are succesful. By doing so, we can find which values satisfy certain conditions such as length and the actual characters in the password.
-This allows us to use SQL injection, even when teh answers aren't shown on the screen.
+This allows us to use SQL injection, even when the answers aren't shown on the screen.
