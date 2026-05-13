@@ -8,7 +8,7 @@ From the labs description, we know that if the results of the SQL query are retu
 We need to access a table called 'users' with columns named 'username' and 'pasword'. For this lab, BurpSuite will be required due to the use of tracking cookies.
 <br><br>Whilst using Burp suite we are able to see this code snippet when applying a filter:
 ``` <div>Welcome back!</div>```
-To confirm that the message disspears when there is an invalid input, we can send the filter search query to the repeater tab and then append this wuery onto the cookies:
+To confirm that the message disspears when there is an invalid input, we can send the filter search query to the repeater tab and then append this query onto the cookies:
 ```'and 0=1--```.
 When this is sent to the website, there is no 'Welcome back!' message.<br><br>
 Therefore, also on the repeater tab, we can append ```' UNION SELECT NULL FROM USERS--``` with a varying number of ```NULL```'s to see if the 'users' table exists and if yes how many colums does it have..
