@@ -29,5 +29,5 @@ SInce an error occurred, I knew that the length must be greater than two. After 
 In order to find out the actual characters in the password I used teh substring function, creating this payload :```
 ' ||(SELECT CASE WHEN SUBSTR(password,1,1) = "" THEN TO_CHAR(1/0) ELSE NULL END FROM users WHERE username = 'administrator')||'```
 After sending this to the Intruder tab, I set out a cluster bomb attack where I assigned this to one payload:<img width="905" height="530" alt="image" src="https://github.com/user-attachments/assets/464b807d-d99e-4776-bbc7-b049b9f93938" /><img width="907" height="610" alt="image" src="https://github.com/user-attachments/assets/89503965-a3e1-4078-be80-41e9b44db51d" />
-After letting this run...
+After letting this run I found all of the neccesary characters for the password, after submitting the password, the lab was marked as complete.
 ### Why the exploit works 
