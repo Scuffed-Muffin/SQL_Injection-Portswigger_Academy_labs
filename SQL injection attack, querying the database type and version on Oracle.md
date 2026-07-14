@@ -15,3 +15,4 @@ This told me that there are two columns within the ```v$version``` table. Theref
 This payload worked, leading the lab to be finished.
 
 ### Why the exploit works 
+This ecploit works because the website designer, hasn't considered possible union vulnrabilities in the category query. This lab has also taught me to commit to labs in a slower, more methodical process, starting with the basics such as identifying the number of columns every time.
